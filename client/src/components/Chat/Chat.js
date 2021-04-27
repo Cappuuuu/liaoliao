@@ -47,7 +47,8 @@ const Chat = ({ location , socket , endPoint }) => {
         setName(name);
         setAvatar(avatar);
         socket.emit('getRecord');
-
+        console.log('qq');
+        
         // 修正畫面滾動問題
         if(device.os === 'ios'){
             disableBodyScroll(document.getElementById("messages"));
